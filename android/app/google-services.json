@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "419404673777",
+    "project_id": "goodhouse-3c3c6",
+    "storage_bucket": "goodhouse-3c3c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419404673777:android:41909eff266be29cd3af50",
+        "android_client_info": {
+          "package_name": "com.gomeshome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419404673777-h71aomhqkblebfl58nd497o7jac07a58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gomeshome",
+            "certificate_hash": "2661b56611b9e566927d9cf35e1910d22af3f23c"
+          }
+        },
+        {
+          "client_id": "419404673777-mb8che390j63vs1nn02slr59vjbmd9q9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDocy4Zsq7mqvo-eWfxvNDHQtG0DKq2_tI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419404673777-mb8che390j63vs1nn02slr59vjbmd9q9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
