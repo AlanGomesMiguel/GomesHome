@@ -26,7 +26,8 @@ const Preload = (props) => {
         if (profile.uid === '' && profile.email === '' && profile.senha === '' ) {
             navigation.navigate("Login")
         } else {
-            navigation.navigate("TabsNav")
+            navigation.navigate("Login")
+            //navigation.navigate("TabsNav")
         }
     }, [])
 
@@ -34,8 +35,8 @@ const Preload = (props) => {
 
     return (
         <View style={styles.container}>
-            <Logo width={150} height={150} fill="#708090" />
-            <ActivityIndicator width="200" height="200" color="#000000" />
+            <Logo width={150} height={150} fill="#6693E5" />
+            <ActivityIndicator width="200" height="200" color="#6693E5" />
         </View>
     )
 }

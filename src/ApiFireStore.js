@@ -4,8 +4,7 @@ export default{
 
     listar: async () =>{
 
-        let docs = await firestore().collection('goodHause')
-        .doc("acionamentos").collection("Cozinha").get();
+        let docs = await firestore().collection("user").get();
 
         return docs;
 

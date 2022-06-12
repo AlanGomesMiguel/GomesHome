@@ -18,7 +18,7 @@ function MyTabs() {
   return (
     <Tab.Navigator
       initialRouteName="Home"
-      activeColor="#708090"
+      activeColor="#6693E5"
       barStyle={{ 
         backgroundColor: '#B0C4DE',
      }}
@@ -29,7 +29,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ color }) => (
-            <Feeds width={25} height={25} fill="#708090" />  
+            <Feeds width={25} height={25} fill="#6693E5" />  
           ),
         }}
       />
@@ -39,7 +39,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Feed',
           tabBarIcon: ({ color }) => (
-            <Today width={25} height={25} fill="#708090" />
+            <Today width={25} height={25} fill="#6693E5" />
           ),
         }}
       />
@@ -49,7 +49,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Buscar',
           tabBarIcon: ({ color }) => (
-            <Buscar width={25} height={25} fill="#708090" />
+            <Buscar width={25} height={25} fill="#6693E5" />
           ),
         }}
       />
@@ -59,7 +59,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Config',
           tabBarIcon: ({ color }) => (
-            <Notifications width={25} height={25} fill="#708090" />
+            <Notifications width={25} height={25} fill="#6693E5" />
           ),
         }}
       />
@@ -69,7 +69,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Config',
           tabBarIcon: ({ color }) => (
-            <Account width={25} height={25} fill="#708090" />
+            <Account width={25} height={25} fill="#6693E5" />
           ),
         }}
       />

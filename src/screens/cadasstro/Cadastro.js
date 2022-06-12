@@ -21,20 +21,20 @@ const Cadastro = (props) => {
 
 
 
-    const Cad = async (user, confirmPass ) => {
-     
+    const Cad = async (user, confirmPass) => {
+
         let Cadastro = await ApiFireLogin.Cadastrar(user, confirmPass);
-        console.log(Cadastro);  
-        if(Cadastro === "Cadastrado"){
+        console.log(Cadastro);
+        if (Cadastro === "Cadastrado") {
             alert("Efetue o login!!");
             navigation.navigate("Login");
-        }else{
-            if(Cadastro==1){
+        } else {
+            if (Cadastro == 1) {
                 alert("E-mail já esta em uso !");
-            }else{
+            } else {
                 alert("E-mail invalido !");
             }
-        }   
+        }
     }
 
     useEffect(() => {
@@ -71,21 +71,23 @@ const Cadastro = (props) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Logo width={150} height={150} fill="#708090" />
+            <Logo width={150} height={150} fill="#6693E5" />
             <View style={{
                 flexDirection: "row",
-                width: "85%",
-                marginTop: 25,
+                backgroundColor: "#F5FFFA",
+                height: 40,
+                width: "75%",
+                marginTop: 10,
+                padding: 1,
                 borderRadius: 15,
-                borderWidth: 2,
-                alignContent: "center",
+                borderWidth: 1,
                 alignItems: "center",
                 justifyContent: "flex-start",
-            }} >
+            }}>
                 <View
                     style={{
-                        marginLeft: 15,
-                        marginRight: 15,
+                        marginLeft: 10,
+                        marginRight: 10,
                     }}
                 >
                     <User width={25} height={25} fill="#000" />
@@ -103,18 +105,20 @@ const Cadastro = (props) => {
             </View>
             <View style={{
                 flexDirection: "row",
-                width: "85%",
-                marginTop: 25,
+                backgroundColor: "#F5FFFA",
+                height: 40,
+                width: "75%",
+                marginTop: 10,
+                padding: 1,
                 borderRadius: 15,
-                borderWidth: 2,
-                alignContent: "center",
+                borderWidth: 1,
                 alignItems: "center",
                 justifyContent: "flex-start",
             }}>
                 <View
                     style={{
-                        marginLeft: 15,
-                        marginRight: 15,
+                        marginLeft: 10,
+                        marginRight: 10,
                     }}
                 >
                     <Lock width={25} height={25} fill="#000" />
@@ -133,18 +137,20 @@ const Cadastro = (props) => {
             </View>
             <View style={{
                 flexDirection: "row",
-                width: "85%",
-                marginTop: 25,
+                backgroundColor:"#F5FFFA",
+                height:40,
+                width: "75%",
+                marginTop: 10,
+                padding: 1,
                 borderRadius: 15,
-                borderWidth: 2,
-                alignContent: "center",
+                borderWidth: 1,
                 alignItems: "center",
                 justifyContent: "flex-start",
             }}>
                 <View
                     style={{
-                        marginLeft: 15,
-                        marginRight: 15,
+                        marginLeft: 10,
+                        marginRight: 10,
                     }}
                 >
                     <Lock width={25} height={25} fill="#000" />
@@ -163,23 +169,25 @@ const Cadastro = (props) => {
             </View>
             <View>
                 <TouchableOpacity
+                    onPress={Login}
                     style={{
-                        height: 50,
-                        width: 200,
-                        marginTop: 35,
+                        height: 40,
+                        width: 288,
+                        backgroundColor: "#6693E5",
+                        marginTop: 15,
+                        padding: 1,
                         borderRadius: 15,
-                        borderWidth: 2,
+                        borderWidth: 1,
                         justifyContent: "center",
                         alignContent: "center",
                         alignItems: "center"
                     }}
-                    onPress={Login}
                 >
                     <Text
                         style={{
-                            color: "#000",
+                            color: "#fff",
                             fontWeight: "bold",
-                            fontSize: 20
+                            fontSize: 16
                         }}
                     >
                         Cadastrar !!
@@ -191,22 +199,22 @@ const Cadastro = (props) => {
 }
 
 
-const mapStateToProps = ( state ) => {
-    return{
+const mapStateToProps = (state) => {
+    return {
         nome: state.userReducer.nome,
-        email:state.userReducer.email,
-        senha:state.userReducer.senha,
-        uid:state.userReducer.uid
+        email: state.userReducer.email,
+        senha: state.userReducer.senha,
+        uid: state.userReducer.uid
     };
-        
+
 }
 
-const mapDispatchToProps = ( dispatch ) => {
-    return{
-        setUserNome: (nome) => dispatch({type:'SET_NOME', payload:{nome}}),
-        setUserUid: (uid) => dispatch({type:'SET_UID', payload:{uid}}),
-        setUserEmail: (email) => dispatch({type:'SET_EMAIL', payload:{email}}),
-        setUserSenha: (senha) => dispatch({type:'SET_SENHA', payload:{senha}})
+const mapDispatchToProps = (dispatch) => {
+    return {
+        setUserNome: (nome) => dispatch({ type: 'SET_NOME', payload: { nome } }),
+        setUserUid: (uid) => dispatch({ type: 'SET_UID', payload: { uid } }),
+        setUserEmail: (email) => dispatch({ type: 'SET_EMAIL', payload: { email } }),
+        setUserSenha: (senha) => dispatch({ type: 'SET_SENHA', payload: { senha } })
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Cadastro);

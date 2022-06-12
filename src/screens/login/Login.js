@@ -60,21 +60,23 @@ const Login = (props) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Logo width={150} height={150} fill="#708090" />
+            <Logo width={120} height={120} fill="#6693E5" />
             <View style={{
                 flexDirection: "row",
-                width: "85%",
-                marginTop: 25,
+                backgroundColor:"#F5FFFA",
+                height:40,
+                width: "75%",
+                marginTop: 10,
+                padding: 1,
                 borderRadius: 15,
-                borderWidth: 2,
-                alignContent: "center",
+                borderWidth: 1,
                 alignItems: "center",
                 justifyContent: "flex-start",
             }} >
                 <View
                     style={{
-                        marginLeft: 15,
-                        marginRight: 15,
+                        marginLeft: 10,
+                        marginRight: 10,
                     }}
                 >
                     <User width={25} height={25} fill="#000" />
@@ -82,7 +84,7 @@ const Login = (props) => {
 
                 <TextInput
                     style={{
-                        marginStart: 20
+                        marginStart: 5
                     }}
                     placeholder="Digite Seu Email !!"
                     value={user}
@@ -93,18 +95,20 @@ const Login = (props) => {
             </View>
             <View style={{
                 flexDirection: "row",
-                width: "85%",
-                marginTop: 25,
+                backgroundColor:"#F5FFFA",
+                height:40,
+                width: "75%",
+                marginTop: 10,
+                padding: 1,
                 borderRadius: 15,
-                borderWidth: 2,
-                alignContent: "center",
+                borderWidth: 1,
                 alignItems: "center",
                 justifyContent: "flex-start",
             }}>
                 <View
                     style={{
-                        marginLeft: 15,
-                        marginRight: 15,
+                        marginLeft: 10,
+                        marginRight: 10,
                     }}
                 >
                     <Lock width={25} height={25} fill="#000" />
@@ -112,7 +116,7 @@ const Login = (props) => {
 
                 <TextInput
                     style={{
-                        marginStart: 20
+                        marginStart: 5
                     }}
                     placeholderTextColor={"#000"}
                     secureTextEntry={true}
@@ -126,11 +130,13 @@ const Login = (props) => {
                 <TouchableOpacity
                     onPress={Login}
                     style={{
-                        height: 50,
-                        width: 200,
-                        marginTop: 35,
+                        height: 40,
+                        width: 288,
+                        backgroundColor:"#6693E5",
+                        marginTop: 15,
+                        padding: 1,
                         borderRadius: 15,
-                        borderWidth: 2,
+                        borderWidth: 1,
                         justifyContent: "center",
                         alignContent: "center",
                         alignItems: "center"
@@ -138,9 +144,9 @@ const Login = (props) => {
                 >
                     <Text
                         style={{
-                            color: "#000",
+                            color: "#fff",
                             fontWeight: "bold",
-                            fontSize: 20
+                            fontSize: 16
                         }}
                     >
                         Login
@@ -151,8 +157,8 @@ const Login = (props) => {
                 style={{
                     flexDirection: "row",
                     justifyContent:"space-evenly",
-                    height: 50,
-                    width: "85%",
+                    height: 40,
+                    width: "90%",
                     marginTop: 80,
                 }}
             >
@@ -162,7 +168,6 @@ const Login = (props) => {
                     <Text
                         style={{
                             color: "#000",
-                            fontWeight: "bold",
                             fontSize: 15
                         }}
                     >Esqueci a senha</Text>
@@ -174,7 +179,6 @@ const Login = (props) => {
                     <Text
                         style={{
                             color: "#000",
-                            fontWeight: "bold",
                             fontSize: 15
                         }}
                     >Cadastrar</Text>
